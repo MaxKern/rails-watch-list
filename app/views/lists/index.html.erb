@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(/assets/london.jpg)">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path('london.jpg')%>)">
   <div class="container">
     <h1><strong>Your Movie Lists 🎬</strong></h1>
     <p>Save your favorite movies in lists dedicated to specific occasions.</p>
@@ -13,7 +13,7 @@
     <tr>
       <% row.each do |list| %>
         <td>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/assets/london.jpg)">
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('london.jpg')%>)">
             <%= link_to list.name.capitalize, list_path(list) %>
           </div>
         </td>
